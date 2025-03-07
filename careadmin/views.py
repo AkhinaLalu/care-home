@@ -22,8 +22,8 @@ class DashboardView(View):
     template_name = 'carecenter/dashboard_admin.html'
 
     def get(self, request):
-        if not request.user.is_authenticated:
-            return redirect('custom_admin_login')  
+        # if not request.user.is_authenticated:
+        #     return redirect('custom_admin_login')  
        
         return render(request, self.template_name)
     
