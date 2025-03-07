@@ -22,6 +22,4 @@ urlpatterns = [
     path('', include('careapp.urls')),
     path('carehome/', include('careadmin.urls')),
 
-    
-
 ]
