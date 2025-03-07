@@ -30,23 +30,24 @@ class DashboardView(View):
 
 class RecruitmentView(View):
     template_name = 'carecenter/candidate_details.html'
-
+    
     def get(self, request):
-        if not request.user.is_authenticated:
-            return redirect('custom_admin_login') 
-        else:
-            details = StaffDetails.objects.all()
-            context ={
-                'details':details
-                } 
+        context = {}
+        # if not request.user.is_authenticated:
+        #     return redirect('custom_admin_login') 
+        # else:
+        #     details = StaffDetails.objects.all()
+        #     context ={
+        #         'details':details
+        #         } 
         return render(request, self.template_name,context)
 
 class ProfileDetailsView(View):
     template_name = 'carecenter/profile_details.html'
 
     def get(self, request):
-        if not request.user.is_authenticated:
-            return redirect('custom_admin_login') 
+        # if not request.user.is_authenticated:
+        #     return redirect('custom_admin_login') 
             # user_data = StaffDetails.objects.get(id=id)
             # context ={
             #     'user_data':user_data,
