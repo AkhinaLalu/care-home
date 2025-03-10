@@ -11,12 +11,16 @@
     <meta name="Description" content="Bootstrap Responsive Admin Web Dashboard HTML5 Template">
     <meta name="Author" content="Spruko Technologies Private Limited">
     <meta name="keywords" content="bootstrap template, dashboard, bootstrap admin dashboard, admin template, bootstrap 5 templates, admin, admin dashboard template, bootstrap dashboard, bootstrap admin template, template bootstrap 5, dashboard template bootstrap, admin dashboard ui, template admin, dashboard admin, dashboard template, bootstrap admin panel">
-
+    
     <!-- Favicon -->
     <link rel="icon" href="{% static 'admin_template/assets/images/brand-logos/favicon.ico' %}" type="image/x-icon">
 
     <!-- Bootstrap CSS (Must be Loaded First) -->
     <link id="style" href="{% static 'admin_template/assets/libs/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Core Styles -->
+    <link href="{% static 'admin_template/assets/css/styles.css' %}" rel="stylesheet">
+    <link href="{% static 'admin_template/assets/css/icons.css' %}" rel="stylesheet">
 
     <!-- UI Libraries -->
     <link href="{% static 'admin_template/assets/libs/node-waves/waves.min.css' %}" rel="stylesheet">
@@ -25,11 +29,8 @@
     <link rel="stylesheet" href="{% static 'admin_template/assets/libs/@simonwep/pickr/themes/nano.min.css' %}">
     <link rel="stylesheet" href="{% static 'admin_template/assets/libs/choices.js/public/assets/styles/choices.min.css' %}">
     <link rel="stylesheet" href="{% static 'admin_template/assets/libs/@tarekraafat/autocomplete.js/css/autoComplete.css' %}">
-
-    <!-- Core Styles (Custom CSS - Load Last for Overrides) -->
-    <link href="{% static 'admin_template/assets/css/icons.css' %}" rel="stylesheet">
-    <link href="{% static 'admin_template/assets/css/styles.css' %}" rel="stylesheet">
 </head>
+
 <!-- app-header -->
 <header class="app-header sticky" id="header">
 
@@ -53,14 +54,12 @@
             <!-- End::header-element -->
  
             <!-- Start::header-element -->
-             <!-- Start::header-element -->
-             <div class="header-element mx-lg-0 mx-2">
+            <div class="header-element mx-lg-0 mx-2">
                 <a aria-label="Hide Sidebar" class="sidemenu-toggle header-link" data-bs-toggle="sidebar" href="javascript:void(0);">
                     <svg xmlns="http://www.w3.org/2000/svg" class="header-link-icon menu-btn" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 5h12M4 12h16M4 19h8" color="currentColor"/></svg>
                     <svg xmlns="http://www.w3.org/2000/svg" class="header-link-icon menu-btn-close" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m18 6l-6 6m0 0l-6 6m6-6l6 6m-6-6L6 6" color="currentColor"/></svg>
                 </a>
             </div>
-            <!-- End::header-element -->
             <!-- End::header-element -->
             
             <!-- Start::header-element -->
@@ -1227,34 +1226,3 @@
 </div>
 <div id="responsive-overlay"></div>
 <!-- Scroll To Top -->
- <!-- Core Dependencies -->
- <script src="{% static 'admin_template/assets/libs/@popperjs/core/umd/popper.min.js' %}"></script>
- <script src="{% static 'admin_template/assets/libs/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-
- <!-- UI Libraries -->
- <script src="{% static 'admin_template/assets/libs/node-waves/waves.min.js' %}"></script>
- <script src="{% static 'admin_template/assets/libs/simplebar/simplebar.min.js' %}"></script>
- <script src="{% static 'admin_template/assets/js/simplebar.js' %}"></script>
-
- <!-- Form & UI Enhancements -->
- <script src="{% static 'admin_template/assets/libs/choices.js/public/assets/scripts/choices.min.js' %}"></script>
- <script src="{% static 'admin_template/assets/libs/@tarekraafat/autocomplete.js/autoComplete.min.js' %}"></script>
- <script src="{% static 'admin_template/assets/libs/@simonwep/pickr/pickr.es5.min.js' %}"></script>
-
- <!-- Date & Time Pickers -->
- <script src="{% static 'admin_template/assets/libs/flatpickr/flatpickr.min.js' %}"></script>
- <script src="{% static 'admin_template/assets/libs/moment/min/moment.min.js' %}"></script>
-
- <!-- FullCalendar -->
- <script src="{% static 'admin_template/assets/libs/fullcalendar/index.global.min.js' %}"></script>
- <script src="{% static 'admin_template/assets/js/fullcalendar.js' %}"></script>
-
- <!-- Default Menu (Ensure Navigation Works Correctly) -->
- <script src="{% static 'admin_template/assets/js/defaultmenu.min.js' %}"></script>
-
- <!-- Sticky Navbar -->
- <script src="{% static 'admin_template/assets/js/sticky.js' %}"></script>
-
- <!-- Main Theme & Custom Scripts (Last to Ensure Everything Loads Properly) -->
- <script src="{% static 'admin_template/assets/js/main.js' %}"></script>
- <script src="{% static 'admin_template/assets/js/custom.js' %}"></script>
