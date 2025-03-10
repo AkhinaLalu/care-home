@@ -1,5 +1,5 @@
 {
-  "name": "@popperjs/core",
+  "name": "popperjs/core",
   "version": "2.11.8",
   "description": "Tooltip and Popover Positioning Engine",
   "main": "dist/cjs/popper.js",

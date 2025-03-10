@@ -5,7 +5,7 @@
  * --------------------------------------------------------------------------
  */
 
-import * as Popper from '@popperjs/core'
+import * as Popper from 'popperjs/core'
 import BaseComponent from './base-component.js'
 import EventHandler from './dom/event-handler.js'
 import Manipulator from './dom/manipulator.js'

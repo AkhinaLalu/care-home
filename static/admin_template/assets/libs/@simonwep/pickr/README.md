@@ -16,13 +16,13 @@
   <a href="https://travis-ci.org/Simonwep/pickr"><img
      alt="Build Status"
      src="https://github.com/simonwep/pickr/actions/workflows/ci.yml/badge.svg"></a>
-  <a href="https://www.npmjs.com/package/@simonwep/pickr"><img
+  <a href="https://www.npmjs.com/package/simonwep/pickr"><img
      alt="Download count"
-     src="https://img.shields.io/npm/dm/@simonwep/pickr.svg"></a>
+     src="https://img.shields.io/npm/dm/simonwep/pickr.svg"></a>
   <img alt="No dependencies" src="https://img.shields.io/badge/dependencies-none-27ae60.svg">
-  <a href="https://www.jsdelivr.com/package/npm/@simonwep/pickr"><img
+  <a href="https://www.jsdelivr.com/package/npm/simonwep/pickr"><img
      alt="JSDelivr download count"
-     src="https://data.jsdelivr.com/v1/package/npm/@simonwep/pickr/badge?style=rounded"></a>
+     src="https://data.jsdelivr.com/v1/package/npm/simonwep/pickr/badge?style=rounded"></a>
   <img alt="Current version"
        src="https://img.shields.io/github/tag/Simonwep/pickr.svg?color=3498DB&label=version">
   <a href="https://github.com/sponsors/Simonwep"><img
@@ -81,25 +81,25 @@ Note: The readme is always up-to-date with the latest commit. See [Releases](htt
 
 Install via npm:
 ```shell
-$ npm install @simonwep/pickr
+$ npm install simonwep/pickr
 ```
 
 Install via yarn:
 ```shell
-$ yarn add @simonwep/pickr
+$ yarn add simonwep/pickr
 ```
 
 Include code and style:
 ```js
 
 // One of the following themes
-import '@simonwep/pickr/dist/themes/classic.min.css';   // 'classic' theme
-import '@simonwep/pickr/dist/themes/monolith.min.css';  // 'monolith' theme
-import '@simonwep/pickr/dist/themes/nano.min.css';      // 'nano' theme
+import 'simonwep/pickr/dist/themes/classic.min.css';   // 'classic' theme
+import 'simonwep/pickr/dist/themes/monolith.min.css';  // 'monolith' theme
+import 'simonwep/pickr/dist/themes/nano.min.css';      // 'nano' theme
 
 // Modern or es5 bundle (pay attention to the note below!)
-import Pickr from '@simonwep/pickr';
-import Pickr from '@simonwep/pickr/dist/pickr.es5.min';
+import Pickr from 'simonwep/pickr';
+import Pickr from 'simonwep/pickr/dist/pickr.es5.min';
 ```
 ---
 
@@ -114,13 +114,13 @@ jsdelivr:
 ```html
 
 <!-- One of the following themes -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/> <!-- 'classic' theme -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css"/> <!-- 'monolith' theme -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"/> <!-- 'nano' theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simonwep/pickr/dist/themes/classic.min.css"/> <!-- 'classic' theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simonwep/pickr/dist/themes/monolith.min.css"/> <!-- 'monolith' theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simonwep/pickr/dist/themes/nano.min.css"/> <!-- 'nano' theme -->
 
 <!-- Modern or es5 bundle -->
-<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.es5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simonwep/pickr/dist/pickr.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simonwep/pickr/dist/pickr.es5.min.js"></script>
 ```
 
 Be sure to load the `pickr.min.js` (or the es5 version) **after** `pickr.min.css`. Moreover the `script` tag doesn't work with the `defer` attribute.

@@ -8,11 +8,11 @@
 </div>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@popperjs/core">
-    <img src="https://img.shields.io/npm/v/@popperjs/core?style=for-the-badge" alt="npm version" />
+  <a href="https://www.npmjs.com/package/popperjs/core">
+    <img src="https://img.shields.io/npm/v/popperjs/core?style=for-the-badge" alt="npm version" />
   </a>
-  <a href="https://www.npmjs.com/package/@popperjs/core">
-    <img src="https://img.shields.io/endpoint?style=for-the-badge&url=https://runkit.io/fezvrasta/combined-npm-downloads/1.0.0?packages=popper.js,@popperjs/core" alt="npm downloads per month (popper.js + @popperjs/core)" />
+  <a href="https://www.npmjs.com/package/popperjs/core">
+    <img src="https://img.shields.io/endpoint?style=for-the-badge&url=https://runkit.io/fezvrasta/combined-npm-downloads/1.0.0?packages=popper.js,popperjs/core" alt="npm downloads per month (popper.js + popperjs/core)" />
   </a>
   <a href="https://rollingversions.com/popperjs/popper-core">
     <img src="https://img.shields.io/badge/Rolling%20Versions-Enabled-brightgreen?style=for-the-badge" alt="Rolling Versions" />
@@ -124,20 +124,20 @@ for the official Popper wrapper for React.
 
 ```bash
 # With npm
-npm i @popperjs/core
+npm i popperjs/core
 
 # With Yarn
-yarn add @popperjs/core
+yarn add popperjs/core
 ```
 
 ### 2. CDN
 
 ```html
 <!-- Development version -->
-<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<script src="https://unpkg.com/popperjs/core@2/dist/umd/popper.js"></script>
 
 <!-- Production version -->
-<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/popperjs/core@2"></script>
 ```
 
 ### 3. Direct Download?
@@ -172,7 +172,7 @@ Here is a complete example:
 <button id="button" aria-describedby="tooltip">I'm a button</button>
 <div id="tooltip" role="tooltip">I'm a tooltip</div>
 
-<script src="https://unpkg.com/@popperjs/core@^2.0.0"></script>
+<script src="https://unpkg.com/popperjs/core@^2.0.0"></script>
 <script>
   const button = document.querySelector('#button');
   const tooltip = document.querySelector('#tooltip');
@@ -193,7 +193,7 @@ how to build your own tooltip from scratch using Popper.
 You can import the `createPopper` constructor from the fully-featured file:
 
 ```js
-import { createPopper } from '@popperjs/core';
+import { createPopper } from 'popperjs/core';
 
 const button = document.querySelector('#button');
 const tooltip = document.querySelector('#tooltip');
@@ -217,7 +217,7 @@ library is built in a modular way to allow to import only the parts you really
 need.
 
 ```js
-import { createPopperLite as createPopper } from '@popperjs/core';
+import { createPopperLite as createPopper } from 'popperjs/core';
 ```
 
 The Lite version includes the most necessary modifiers that will compute the
@@ -235,7 +235,7 @@ import {
   createPopperLite as createPopper,
   preventOverflow,
   flip,
-} from '@popperjs/core';
+} from 'popperjs/core';
 
 const button = document.querySelector('#button');
 const tooltip = document.querySelector('#tooltip');
@@ -279,9 +279,9 @@ Below you can find the size of each version, minified and compressed with the
 
 <!-- Don't change the labels to use hyphens, it breaks, even when encoded -->
 
-![](https://badge-size.now.sh/https://unpkg.com/@popperjs/core/dist/umd/popper.min.js?compression=brotli&label=popper)
-![](https://badge-size.now.sh/https://unpkg.com/@popperjs/core/dist/umd/popper-lite.min.js?compression=brotli&label=popper%20lite)
-![](https://badge-size.now.sh/https://unpkg.com/@popperjs/core/dist/umd/popper-base.min.js?compression=brotli&label=popper%20base)
+![](https://badge-size.now.sh/https://unpkg.com/popperjs/core/dist/umd/popper.min.js?compression=brotli&label=popper)
+![](https://badge-size.now.sh/https://unpkg.com/popperjs/core/dist/umd/popper-lite.min.js?compression=brotli&label=popper%20lite)
+![](https://badge-size.now.sh/https://unpkg.com/popperjs/core/dist/umd/popper-base.min.js?compression=brotli&label=popper%20base)
 
 ## Hacking the library
 
