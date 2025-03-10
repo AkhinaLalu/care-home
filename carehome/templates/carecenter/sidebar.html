@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="{% static 'admin_template/assets/libs/flatpickr/flatpickr.min.css' %}">
     <link rel="stylesheet" href="{% static 'admin_template/assets/libs/@simonwep/pickr/themes/nano.min.css' %}">
     <link rel="stylesheet" href="{% static 'admin_template/assets/libs/choices.js/public/assets/styles/choices.min.css' %}">
-    <link rel="stylesheet" href="{% static 'admin_template/assets/libs/tarekraafat/autocomplete.js/css/autoComplete.css' %}">
+    <link rel="stylesheet" href="{% static 'admin_template/assets/libs/@tarekraafat/autocomplete.js/css/autoComplete.css' %}">
 </head>
 
 <!-- app-header -->
@@ -43,7 +43,7 @@
             <!-- Start::header-element -->
             <div class="header-element">
                 <div class="horizontal-logo">
-                    <a href="#" class="header-logo">
+                    <a href="index.html" class="header-logo">
                         <img src="{% static 'admin_template/assets/image/circle-only.png' %}" alt="logo" class="desktop-logo">
                         <img src="{% static 'admin_template/assets/image/circle-only.png' %}" alt="logo" class="toggle-logo">
                         <img src="{% static 'admin_template/assets/image/circle-only.png' %}" alt="logo" class="desktop-dark">
@@ -120,7 +120,7 @@
             <!-- Start::header-element -->
             <li class="header-element notifications-dropdown d-xl-block d-none dropdown">
                 <!-- Start::header-link|dropdown-toggle -->
-                <a href="" class="header-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="messageDropdown" aria-expanded="false">
+                <a href="javascript:void(0);" class="header-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" id="messageDropdown" aria-expanded="false">
                     <svg xmlns="http://www.w3.org/2000/svg" class="header-link-icon" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><path d="M2.53 14.77c-.213 1.394.738 2.361 1.902 2.843c4.463 1.85 10.673 1.85 15.136 0c1.164-.482 2.115-1.45 1.902-2.843c-.13-.857-.777-1.57-1.256-2.267c-.627-.924-.689-1.931-.69-3.003C19.525 5.358 16.157 2 12 2S4.475 5.358 4.475 9.5c0 1.072-.062 2.08-.69 3.003c-.478.697-1.124 1.41-1.255 2.267"/><path d="M8 19c.458 1.725 2.076 3 4 3c1.925 0 3.541-1.275 4-3"/></g></svg>
                     <span class="header-icon-pulse bg-pink rounded pulse pulse-pink"></span>
                 </a>
@@ -1186,14 +1186,14 @@
 
                 <!-- Start::slide -->
                 <li class="slide has-sub" style="display:none">
-                    <a href="#" class="side-menu__item">
+                    <a href="javascript:void(0);" class="side-menu__item">
                         <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.891 20.109C2.5 18.717 2.5 16.479 2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391M2.5 9h19M16 21.5v-19m-8 19v-19" color="currentColor"/></svg>
                         <span class="side-menu__label">Tables</span>
                         <i class="ri-arrow-down-s-line side-menu__angle"></i>
                     </a>
                     <ul class="slide-menu child1">
                         <li class="slide side-menu__label1">
-                            <a href="#">Tables</a>
+                            <a href="javascript:void(0)">Tables</a>
                         </li>
                         <li class="slide">
                             <a href="tables.html" class="side-menu__item">Tables</a>
@@ -1226,3 +1226,34 @@
 </div>
 <div id="responsive-overlay"></div>
 <!-- Scroll To Top -->
+<!-- Core Dependencies -->
+<script src="{% static 'admin_template/assets/libs/@popperjs/core/umd/popper.min.js' %}"></script>
+<script src="{% static 'admin_template/assets/libs/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+<!-- UI Libraries -->
+<script src="{% static 'admin_template/assets/libs/node-waves/waves.min.js' %}"></script>
+<script src="{% static 'admin_template/assets/libs/simplebar/simplebar.min.js' %}"></script>
+<script src="{% static 'admin_template/assets/js/simplebar.js' %}"></script>
+
+<!-- Form & UI Enhancements -->
+<script src="{% static 'admin_template/assets/libs/choices.js/public/assets/scripts/choices.min.js' %}"></script>
+<script src="{% static 'admin_template/assets/libs/@tarekraafat/autocomplete.js/autoComplete.min.js' %}"></script>
+<script src="{% static 'admin_template/assets/libs/@simonwep/pickr/pickr.es5.min.js' %}"></script>
+
+<!-- Date & Time Pickers -->
+<script src="{% static 'admin_template/assets/libs/flatpickr/flatpickr.min.js' %}"></script>
+<script src="{% static 'admin_template/assets/libs/moment/min/moment.min.js' %}"></script>
+
+<!-- FullCalendar -->
+<script src="{% static 'admin_template/assets/libs/fullcalendar/index.global.min.js' %}"></script>
+<script src="{% static 'admin_template/assets/js/fullcalendar.js' %}"></script>
+
+<!-- Default Menu (Ensure Navigation Works Correctly) -->
+<script src="{% static 'admin_template/assets/js/defaultmenu.min.js' %}"></script>
+
+<!-- Sticky Navbar -->
+<script src="{% static 'admin_template/assets/js/sticky.js' %}"></script>
+
+<!-- Main Theme & Custom Scripts (Last to Ensure Everything Loads Properly) -->
+<script src="{% static 'admin_template/assets/js/main.js' %}"></script>
+<script src="{% static 'admin_template/assets/js/custom.js' %}"></script>
