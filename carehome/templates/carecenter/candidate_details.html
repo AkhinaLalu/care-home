@@ -139,26 +139,26 @@ thead {
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            {% for detail in details %}
-                                            <tr>
+                                            <tr class="table-data" onclick="window.location.href='{% url 'pro-details-page' %}'">
                                                 
                                                 <td>
-                                                    <a href="{% url 'pro-details-page' detail.id %}">
+                                                    <a href="#">
                                                         <div class="d-flex align-items-center" value={{detail.id}}>
                                                         <span class="avatar avatar-xs me-2 online avatar-rounded" >
-                                                            <img src="{{ detail.image.url }}" alt="User Image" width="150">
-                                                        </span>{{detail.first_name}} {{detail.last_name}}
+                                                            <img src="{% static 'admin_template/assets/image/img1.jpg' %}" alt="User Image" width="150">
+                                                        </span>test user2
                                                     </div></br><p>Health Care Assistant</p><p>Student Visa</p>
   													</a>
                                                 </td>
                                                 <td><div class="hstack gap-2 fs-15">
+                                                        {% comment %} <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-info"><i class="ri-eye-line"></i></a> {% endcomment %}
                                                         <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-success"><i class="ri-message-2-line"></i></a>
   														<a href="javascript:void(0);" class="btn btn-icon btn-sm btn-success"><i class="ri-send-plane-2-line"></i></a>
   														<a href="javascript:void(0);" class="btn btn-icon btn-sm btn-warning"><i class="ri-mail-check-fill"></i></a>
   														<a href="javascript:void(0);" class="btn btn-icon btn-sm btn-danger"><i class="ri-delete-bin-2-fill"></i></a>
   														<a href="javascript:void(0);" class="btn btn-icon btn-sm btn-teal"><i class="ri-map-pin-line"></i></a>
                                                     </div></td>
-                                                <td><i class="ri-mail-line"></i>{{detail.email}}<br><i class="ri-phone-line"></i> {{detail.phone_number}}</td>
+                                                <td><i class="ri-mail-line"></i>test2@gmail.com<br><i class="ri-phone-line"></i> 34534565437</td>
                                                 <td>
                                                     <select class="form-select select-class" >
                                                         <option value="New application">New application</option>
@@ -186,10 +186,54 @@ thead {
                                                  </td>
                                                  <td>CB4 2AB <i class="ri-pencil-line"></i></td>                                      
                                             </tr>
-                                            {% endfor %}
-                                           
+                                            <tr onclick="window.location.href='{% url 'pro-details-page' %}'">
+                                                
+                                                <td>
+                                                    <a href="#">
+                                                        <div class="d-flex align-items-center" value={{detail.id}}>
+                                                        <span class="avatar avatar-xs me-2 online avatar-rounded" >
+                                                            <img src="{% static 'admin_template/assets/image/img1.jpg' %}" alt="User Image" width="150">
+                                                        </span>test user2
+                                                    </div></br><p>Health Care Assistant</p><p>Student Visa</p>
+  													</a>
+                                                </td>
+                                                <td><div class="hstack gap-2 fs-15">
+                                                        {% comment %} <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-info"><i class="ri-eye-line"></i></a> {% endcomment %}
+                                                        <a href="javascript:void(0);" class="btn btn-icon btn-sm btn-success"><i class="ri-message-2-line"></i></a>
+  														<a href="javascript:void(0);" class="btn btn-icon btn-sm btn-success"><i class="ri-send-plane-2-line"></i></a>
+  														<a href="javascript:void(0);" class="btn btn-icon btn-sm btn-warning"><i class="ri-mail-check-fill"></i></a>
+  														<a href="javascript:void(0);" class="btn btn-icon btn-sm btn-danger"><i class="ri-delete-bin-2-fill"></i></a>
+  														<a href="javascript:void(0);" class="btn btn-icon btn-sm btn-teal"><i class="ri-map-pin-line"></i></a>
+                                                    </div></td>
+                                                <td><i class="ri-mail-line"></i>test2@gamil.com<br><i class="ri-phone-line"></i> 47423233456</td>
+                                                <td>
+                                                    <select class="form-select select-class" >
+                                                        <option value="New application">New application</option>
+                                                        <option value="Intro call done">Intro call done</option>
+                                                        <option value="Application in progress">Application in progress</option>
+                                                        <option value="Vetting in progress">Vetting in progress</option>
+                                                        <option value="Awaiting reference">Awaiting reference</option>
+                                                        <option value="Interview booked">Interview booked</option>
+                                                        <option value="Interview done">Interview done</option>
+                                                        <option value="Training to be completed">Training to be completed</option>
+                                                        <option value="Training completed">Training completed</option>
+                                                        <option value="Incomplete Documents">Incomplete Documents</option>
+                                                        <option value="DBS to be completed">DBS to be completed</option>
+                                                        <option value="No experience">No experience</option>
+                                                        <option value="Not interested">Not interested</option>
+                                                    </select>
+                                                </td>  
+                                                <td>
+                                                    <div class="progress mb-3" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                                         <div class="progress-bar bg-success" style="width: 40%;">40%</div>
+                                                     </div>
+                                                 </td>
+                                                 <td>
+                                                    0
+                                                 </td>
+                                                 <td>CB4 2AB <i class="ri-pencil-line"></i></td>                                      
+                                            </tr>   
                                         </tbody>
-
                                         
                                     </table>
                                 </div>
